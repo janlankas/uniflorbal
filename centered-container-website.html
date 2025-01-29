@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Container Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url(./RADIANT\ RED\ 1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness();
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-img {
+            width: 270px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 14px;
+        }
+
+        .container {
+            width: 60%;
+            min-height: 300px;
+            background-color: #00800000;
+            border: 5px solid rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+            /* Add padding for better text spacing on small screens */
+            padding: 20px;
+            /* Ensure container doesn't get too wide on large screens */
+            max-width: 1200px;
+            /* Ensure container doesn't get too narrow on small screens */
+            min-width: 280px;
+        }
+
+        .text {
+            color: rgb(0, 0, 0);
+            font-size: clamp(1rem, 2.5vw, 2rem);
+            text-align: center;
+        }
+
+        /* Media query for very small screens */
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"><img class="logo-img" src="./logo.png" alt=""></div>
+    <div class="container">
+        <div class="text">HELLO, WORLD!</div>
+    </div>
+</body>
+</html>

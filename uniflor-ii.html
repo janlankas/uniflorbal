@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIFLOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            /* Background image setup */
+            background-image: url('./comp/bg2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(21, 21, 21, 0.084);
+            background-blend-mode: overlay;
+            font-family: "Montserrat", serif;
+            font-weight: 400;
+        }
+
+        .logo {
+            width: 250px;
+            height: auto;
+            margin-bottom: 2rem;
+            /* Optional animation */
+            animation: fadeIn 1.5s ease-in;
+        }
+        .main-content {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;}
+        .container {
+            width: 80%;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* Optional animation */
+            animation: slideUp 1s ease-out;
+        }
+
+        .message {
+            font-size: 1.25rem;
+            color: #0a0a0a;
+            line-height: 1.75;
+            /* Optional animation */
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 150px;
+            }
+
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo-ii-white.png" alt="UNIFLOR" class="logo">
+    <div class="main-content">
+        <div class="container">
+         <p class="message"><strong>Na webové stránce momentálně pracujeme.</strong><br> Brzy se dozvíte víc!</p>
+        </div>  
+    </div>
+   
+</body>
+</html>
